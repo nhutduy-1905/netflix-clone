@@ -1,37 +1,71 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies - ĐỦ LỚN (triệu files) - KHÔNG TRACK VÀO GIT
+node_modules/
+.pnp
+.pnp.js
 /node_modules
 /.pnp
-.pnp.js
 
-# testing
-/coverage
-
-# next.js
+# Build outputs - KHÔNG CẦN TRACK
 /.next/
 /out/
-
-# production
 /build
+/dist
+.next
+out
+build
+dist
 
-# misc
-.DS_Store
-*.pem
+# Prisma
+.prisma/
+prisma/
 
-# debug
+# Testing
+/coverage
+.nyc_output
+
+# Environment - CHỨA CREDENTIALS/KEYS
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.test.local
+.env.development.local
+
+# Logs - DEBUG FILES
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
-# local env files
-.env*.local
-.env
+# OS specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
 
-# vercel
-.vercel
+# IDE
+.vscode
+.idea
 
-# typescript
+# Temporary
+*.swp
+*.swo
+*~
+.cache/
+.turbo/
+
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
